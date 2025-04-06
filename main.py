@@ -5,7 +5,7 @@ import os
 import tempfile
 
 # サービスアカウントキーのパス
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'gcp-key.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/etc/secrets/gcp-key.json'
 
 app = FastAPI()
 client = vision.ImageAnnotatorClient()
